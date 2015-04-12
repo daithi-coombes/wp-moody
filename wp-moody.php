@@ -9,4 +9,8 @@
  * Author URI: https://github.com/daithi-coombes
  * License: MIT
  */
+namespace WpMoody;
+use WpMoody;
 
+//bootsrap including actions/filters etc
+require_once('bootstrap.php');
