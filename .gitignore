@@ -1,0 +1,6 @@
+#directories
+vendor/
+
+#files
+config/config.yml
+composer.lock

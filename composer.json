@@ -1,0 +1,13 @@
+{
+    "name": "daithi/wp-moody",
+    "license": "MIT",
+    "version": "0.0.1",
+    "dist": {
+        "type": "git",
+        "url": "git://github.com/daithi-coombes/bluemix-personality-insights-php.git"
+    },
+
+    "require": {
+        "daithi/bluemix-php": "dev-master"
+    }
+}
