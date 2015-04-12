@@ -13,6 +13,7 @@ require_once('vendor/autoload.php');
 
 
 define('WPMOODY_DIR', dirname(__FILE__));
+define('WPMOODY_ASSETS_URL', plugins_url() . '/wp-moody/assets');
 
 /**
  * Autoload WP Moody library.
@@ -42,9 +43,6 @@ spl_autoload_register( __NAMESPACE__ . '\\autoload' );
 /**
  * Actions
  */
-\add_action( 'media_buttons', array('WpMoody\\UserInterface', 'actionEditorForm') );
-function foobar()
-{
-    echo '<a href="#" id="wp-moody-analyze" class="media">Moody Me</a>';
-}
-//\add_action('media_buttons', '\WpMoody\foobar');
+\add_action( 'media_buttons_context', array('WpMoody\\UserInterface', 'actionMediaButtons') );
+//\add_action( 'post_submitbox_misc_actions', array('WpMoody\\UserInterface', 'actionEditorForm') );
+//\add_action( 'save_post', array('WpMoody\\Post', 'actionSave'));

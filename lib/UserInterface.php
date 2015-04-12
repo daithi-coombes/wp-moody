@@ -12,10 +12,13 @@ class UserInterface
 {
 
     /**
-     * Action handle for display action button in editor/post form.
+     * Action callback to print out the WpMoody media button
      */
-    public static function actionEditorForm()
+    public static function actionMediaButtons()
     {
-        echo '<a href="#" id="wp-moody-analyze" class="media">Moody Me</a>';
+
+        echo '<a title="Moody Me" href="#" class=>
+            <img src="' . WPMOODY_ASSETS_URL . '/images/Bluemix-logo-86x32.png" /></a>';
     }
+
 }
