@@ -12,14 +12,13 @@ class UserInterface
 {
 
     /**
-     * Action handle for display action button in editor/post form.
+     * Action callback to print out the WpMoody media button
      */
-    public static function actionEditorForm()
+    public static function actionMediaButtons()
     {
-        echo '<div class="misc-pub-section misc-pub-section-last">
-         <span id="timestamp">'
-         . '<label><input type="checkbox"' . (!empty($value) ? ' checked="checked" ' : null) 
-         . 'value="1" name="publish_in_frontpage" />Moody Me</label>'
-    .'</span></div>';
+
+        echo '<a title="Moody Me" href="#" class=>
+            <img src="' . WPMOODY_ASSETS_URL . '/images/Bluemix-logo-86x32.png" /></a>';
     }
+
 }

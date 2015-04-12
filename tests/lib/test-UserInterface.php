@@ -9,20 +9,8 @@ class TestUserInterface extends \WP_UnitTestCase
     public function test_actionMediaButtons()
     {
 
-        $actual = UserInterface::actionMediaButtons('');
-        $expected =  "<a title='Moody Me' href='#'>
-            <img src='" . WPMOODY_ASSETS . "/images/icon.png' /></a>";
-
-      $this->assertEquals($expected, $actual);
-    }
-
-    /**
-     * @deprecated
-     */
-    public function test_actionEditorForm()
-    {
-        return;
-        $this->expectOutputString( '<a href="#" id="wp-moody-analyze" class="media">Moody Me</a>' );
-        UserInterface::actionEditorForm();
+        $this->expectOutputString('<a title="Moody Me" href="#" class=>
+            <img src="' . WPMOODY_ASSETS_URL . '/images/Bluemix-logo-86x32.png" /></a>');
+        UserInterface::actionMediaButtons('');
     }
 }

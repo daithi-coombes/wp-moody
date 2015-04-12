@@ -13,6 +13,7 @@ require_once('vendor/autoload.php');
 
 
 define('WPMOODY_DIR', dirname(__FILE__));
+define('WPMOODY_ASSETS_URL', plugins_url() . '/wp-moody/assets');
 
 /**
  * Autoload WP Moody library.
