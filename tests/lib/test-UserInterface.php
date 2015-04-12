@@ -6,12 +6,10 @@ use WpMoody\UserInterface;
 class TestUserInterface extends \WP_UnitTestCase
 {
 
-    public function testMedia_button()
+    public function test_actionEditorForm()
     {
 
-        $actual = UserInterface::getEditorForm();
-        $expected = '';
-
-        $this->assertEquals($expected, $actual);
+        $this->expectOutputString( '<a href="#" id="wp-moody-analyze" class="media">Moody Me</a>' );
+        UserInterface::actionEditorForm();
     }
 }
