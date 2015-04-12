@@ -16,6 +16,10 @@ class UserInterface
      */
     public static function actionEditorForm()
     {
-        echo '<a href="#" id="wp-moody-analyze" class="media">Moody Me</a>';
+        echo '<div class="misc-pub-section misc-pub-section-last">
+         <span id="timestamp">'
+         . '<label><input type="checkbox"' . (!empty($value) ? ' checked="checked" ' : null) 
+         . 'value="1" name="publish_in_frontpage" />Moody Me</label>'
+    .'</span></div>';
     }
 }

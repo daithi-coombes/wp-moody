@@ -42,9 +42,6 @@ spl_autoload_register( __NAMESPACE__ . '\\autoload' );
 /**
  * Actions
  */
-\add_action( 'media_buttons', array('WpMoody\\UserInterface', 'actionEditorForm') );
-function foobar()
-{
-    echo '<a href="#" id="wp-moody-analyze" class="media">Moody Me</a>';
-}
-//\add_action('media_buttons', '\WpMoody\foobar');
+\add_action( 'media_buttons_context', array('WpMoody\\UserInterface', 'actionMediaButtons') );
+//\add_action( 'post_submitbox_misc_actions', array('WpMoody\\UserInterface', 'actionEditorForm') );
+//\add_action( 'save_post', array('WpMoody\\Post', 'actionSave'));
